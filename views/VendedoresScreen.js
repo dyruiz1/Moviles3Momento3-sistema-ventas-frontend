@@ -83,11 +83,18 @@ export default function VendedoresScreen({ navigation }) {
   };
   const handleSearch = useCallback(async (identificacion) => {
     const { status, data } = await axios.get(`http://localhost:3000/api/vendedores/${identificacion}`);
-    if (status === 200) {
+    if (data != null){
       setInitialValues(data);
-    } else {
-      alert(`Error consultando vendedor ${identificacion}`)
     }
+    else{
+      alert(`Error consultando vendedor, no existe ${identificacion}`)
+    }
+    // if (status === 200) {
+    //   setInitialValues(data);
+    // } else {
+    //   if (data.identificacion ==null)
+    //     alert(`Error consultando vendedor ${identificacion}`)
+    // }
   }, [setInitialValues])
 
   const onFormReset = useCallback(() => {
