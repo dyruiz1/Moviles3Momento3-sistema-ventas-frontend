@@ -86,7 +86,7 @@ const formStyles = StyleSheet.create({
   button: {
     borderWidth: 1,
     borderColor: "#007BFF",
-    backgroundColor: "#007BFF",
+    backgroundColor: "#CFD8D3",
     padding: 15,
     marginTop: 20,
     marginLeft: 20,
@@ -113,7 +113,7 @@ const formStyles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 18,
-    color: "#fff",
+    color: "#0A0B0B",
   }
 });
 

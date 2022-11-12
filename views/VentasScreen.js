@@ -98,7 +98,7 @@ export default function VendedoresScreen({ navigation }) {
   return (
     <ScrollView contentContainerStyle={styles.outer}>
       <ImageBackground
-        source={require("../assets/banner.jpg")}
+        source={require("../assets/banner2.jpg")}
         resizeMode="cover"
         style={styles.image}
       >
@@ -123,7 +123,7 @@ export default function VendedoresScreen({ navigation }) {
             <>
               <Picker
                 selectedValue={values.identificacion}
-                style={{ height: 50, width: 400}}
+                style={{ height: 50, width: 350}}
                 onValueChange={(itemValue, itemIndex) => setFieldValue("identificacion", itemValue)}
               >
                 <Picker.Item label="Selecciona un Vendedor" value="" enabled={false} />

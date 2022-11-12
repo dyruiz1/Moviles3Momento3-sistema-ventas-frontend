@@ -36,7 +36,8 @@ export default function App() {
      
       <Tab.Navigator 
       initialRouteName='Home'
-      screenOptions={{ headerShown: false }}
+      screenOptions={{ headerShown: false , tabBarActiveBackgroundColor:'#CFD8D3'}}
+      
       >
           
         <Tab.Screen  
