@@ -123,7 +123,7 @@ export default function VendedoresScreen({ navigation }) {
             <>
               <Picker
                 selectedValue={values.identificacion}
-                style={{ height: 50, width: 150 }}
+                style={{ height: 50, width: 400}}
                 onValueChange={(itemValue, itemIndex) => setFieldValue("identificacion", itemValue)}
               >
                 <Picker.Item label="Selecciona un Vendedor" value="" enabled={false} />
